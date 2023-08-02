@@ -16,7 +16,7 @@ function  Entrar(){
         let tabela = document.getElementById('tabela').innerHTML = " <tr><th>itens</th><th></th></tr>";
         // LAÇO DE REPETICAO PARA COLOCAR NOMES NA TABELA
         for(let i=0;i <=(dadosLista.length-1);i++){
-            tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='editar(this.parentNode.parentNode.rowIndex)'>editar</button><button class='btn btn-danger' onclick='excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button></td></tr>";
+            tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onclick='excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button><button class='btn btn-success' onclick='verificar(this.parentNode.parentNode.rowIndex)'>Vericar</button></td></tr>";
             document.getElementById("tabela").innerHTML = tabela;
         }
     }
@@ -30,3 +30,5 @@ function  Entrar(){
         dadosLista.splice((i - 1), 1);
         document.getElementById('tabela').deleteRow(i);
     }
+    
+    
