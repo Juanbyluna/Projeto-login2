@@ -1,6 +1,20 @@
 body{
-    background-color: rgb(168, 255, 142);
-}
+background: rgb(246,255,238);
+background: radial-gradient(circle, rgba(246,255,238,1) 0%, rgba(235,255,219,1) 46%, rgba(185,233,148,1) 100%);}
 h1{
     text-align: center;
+}
+div{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+option{
+    font-size: 15px;
+    background-color: rgb(99, 160, 81) ;
+}
+select{
+    border-radius: 10px;
+    border-color: black;
+    border-style: double;
 }

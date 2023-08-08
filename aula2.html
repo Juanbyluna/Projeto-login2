@@ -13,11 +13,21 @@
 </head>
 <body>
     <div class="container">
-        <label id="nome">Nome:</label>
+        
         <!-- Cria o campo input -->
-        <input class="form-control" id="nomeUser" type="text">
+       
+        <label for="color">Escolha o tipo de tarefa:</label>
+    <select id="task" name="color">
+        <option value="Profissional">Profissional</option>
+        <option value="Escolar">Escolar</option>
+        <option value="Pessoal">Pessoal</option>
+        
+    </select>
+    <br><br><label for="afazer">Escolha o afazer:</label><br>
+    <input class="form-control" id="nomeUser" type="text"><br>
+     <button class="btn btn-dark" type="button" onclick="salvarUser()">Salvar</button>
         <br>
-        <button class="btn btn-dark" type="button" onclick="salvarUser()">Salvar</button>
+        
     </div>
     <br>
     <div>
@@ -25,20 +35,12 @@
         <table class="table table-striped" id="tabela">
             <tr>
                 <th>Nomes</th>
+                <th>tipo da tarefa</th>
                 <th>Ações</th>
                 
             </tr>
         </table>
-        <label for="color">Escolha uma cor:</label>
-    <select id="color" name="color">
-        <option value="LightBlue">Azul</option>
-        <option value="PaleGreen">Verde</option>
-        <option value="LightPink">Rosa</option>
-        <option value="SlateBlue">Roxo</option>
-    </select>
-    <label for="afazer">Escolha o afazer:</label>
-    <input type="text" id="afazer" name="afazeres">
-    <input type="submit" onclick="">
+        
     </div>
 
     
